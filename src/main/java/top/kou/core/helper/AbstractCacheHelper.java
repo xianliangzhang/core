@@ -10,11 +10,11 @@ import java.util.Properties;
 /**
  * Created by Hack on 2016/12/2.
  */
-public class CacheHelper {
-    private static final Logger RUN_LOG = Logger.getLogger(CacheHelper.class);
+public class AbstractCacheHelper {
+    private static final Logger RUN_LOG = Logger.getLogger(AbstractCacheHelper.class);
     private static final SqlSessionFactory SQL_SESSION_FACTORY = setSqlSessionFactory();
 
-    private CacheHelper() {
+    private AbstractCacheHelper() {
 
     }
 
@@ -24,7 +24,7 @@ public class CacheHelper {
             properties.setProperty("username", ConfigHelper.get("_env.KOME_X"));
             properties.setProperty("password", ConfigHelper.get("_env.KOME_Y"));
 
-            InputStream inputStream = CacheHelper.class.getResource("/datasource/core.xml").openStream();
+            InputStream inputStream = AbstractCacheHelper.class.getResource("/datasource/core.xml").openStream();
             return new SqlSessionFactoryBuilder().build(inputStream, properties);
         } catch (Exception e) {
             RUN_LOG.error(e.getMessage(), e);
@@ -35,4 +35,5 @@ public class CacheHelper {
     public static SqlSessionFactory getSqlSessionFactory() {
         return SQL_SESSION_FACTORY;
     }
+
 }
