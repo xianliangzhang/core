@@ -1,6 +1,6 @@
-package sexy.kome.core.rmi.inter.transfer.impl;
+package top.kou.core.rmi.inter.transfer.impl;
 
-import sexy.kome.core.rmi.inter.transfer.ITransferService;
+import top.kou.core.rmi.inter.transfer.ITransferService;
 
 import java.io.File;
 import java.io.FileOutputStream;

@@ -1,4 +1,4 @@
-package sexy.kome.core.rmi.inter.transfer;
+package top.kou.core.rmi.inter.transfer;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

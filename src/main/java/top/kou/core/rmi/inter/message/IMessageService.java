@@ -1,4 +1,4 @@
-package sexy.kome.core.rmi.inter.message;
+package top.kou.core.rmi.inter.message;
 
 import java.io.Serializable;
 import java.rmi.Remote;

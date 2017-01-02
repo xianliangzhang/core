@@ -1,7 +1,7 @@
-package sexy.kome.core.rmi.skeleton;
+package top.kou.core.rmi.skeleton;
 
 import org.apache.log4j.Logger;
-import sexy.kome.core.helper.ConfigHelper;
+import top.kou.core.helper.ConfigHelper;
 
 import java.rmi.Naming;
 import java.rmi.Remote;

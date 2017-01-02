@@ -1,6 +1,6 @@
-package sexy.kome.core.rmi.inter.message.model;
+package top.kou.core.rmi.inter.message.model;
 
-import sexy.kome.core.helper.ConfigHelper;
+import top.kou.core.helper.ConfigHelper;
 
 import java.io.Serializable;
 import java.util.UUID;
